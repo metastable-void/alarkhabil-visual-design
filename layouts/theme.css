@@ -1,6 +1,11 @@
 /* -*- indent-tabs-mode: nil; tab-width: 2; -*- */
 /* vim: set ts=2 sw=2 et ai : */
 
+* {
+  --url-logo: url(../branding/alarkhabil-logo.svg);
+  --url-logotype: url(../branding/alarkhabil-logotype.svg);
+}
+
 :root, body {
   font-family: system-ui, sans-serif;
 }
@@ -31,12 +36,12 @@ a:hover {
 
 #topbar-branding-icon > .inner {
   background-color: #fff;
-  mask: url(../branding/alarkhabil-logo.svg) center / contain no-repeat add alpha;
+  mask: var(--url-logo) center / contain no-repeat add alpha;
 }
 
 #topbar-branding-logotype {
   background-color: #FF7335;
-  mask: url(../branding/alarkhabil-logotype.svg) center / contain no-repeat add alpha;
+  mask: var(--url-logotype) center / contain no-repeat add alpha;
 }
 
 #content {
@@ -51,5 +56,5 @@ a:hover {
 
 #global-footer-branding-logo {
   background-color: #fff;
-  mask: url(../branding/alarkhabil-logo.svg) center / contain no-repeat add alpha;
+  mask: var(--url-logo) center / contain no-repeat add alpha;
 }
