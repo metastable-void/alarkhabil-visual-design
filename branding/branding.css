@@ -2,8 +2,8 @@
 /* vim: set ts=2 sw=2 et ai : */
 
 * {
-  --url-logo: url(./alarkhabil-logo.svg);
-  --url-logotype: url(./alarkhabil-logotype.svg);
+  --url-logo: url(/branding/logo.svg);
+  --url-logotype: url(/branding/logotype.svg);
   --selection-color: #FF733580;
   --accent-color: #FF7335;
 }
