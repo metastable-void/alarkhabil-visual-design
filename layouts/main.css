@@ -29,6 +29,9 @@ body {
   inset-block-start: 0;
   border-block-end: solid 2px transparent;
   padding-inline: 16px;
+  box-sizing: border-box;
+  inline-size: 100%;
+  overflow-inline: auto;
 }
 
 #topbar-branding-link {
@@ -37,9 +40,14 @@ body {
 }
 
 #topbar-branding-icon {
+  display: block;
   inline-size: 64px;
   min-block-size: 64px;
   font-size: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 1;
 }
 
 #topbar-branding-icon > .inner {
@@ -49,6 +57,7 @@ body {
 }
 
 #topbar-branding-logotype {
+  display: block;
   inline-size: 192px;
   min-block-size: 64px;
   font-size: 0;
@@ -94,11 +103,16 @@ body {
   margin-inline: auto;
 }
 
+#content > :not(.nopadding) {
+  padding-inline: 16px;
+}
+
 #global-footer-branding {
   margin-block: 1em;
   max-inline-size: 640px;
   margin-inline: auto;
   text-align: center;
+  padding-inline: 16px;
 }
 
 #global-footer-branding-logo {
